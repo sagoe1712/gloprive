@@ -38,6 +38,7 @@ $(document).on('pageInit', function (e) {
 	$('#offerpage').load('http://gloprive.com/mobi/promo.php');
 	$('#voucherpage').load('http://gloprive.com/mobi/voucher.php');
 	$('#tranpage').load('http://gloprive.com/mobi/transaction.php');
+	$('#logout').load('http://gloprive.com/mobi/logout3.php');
 	$('#mainpage').click (function(){
 	
 	//alert("click");
