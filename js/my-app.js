@@ -226,7 +226,7 @@ return false;
 		
 		
 		$('#subbutton').click (function() {
-			alert("work");
+			//alert("work");
 //var contactname = $( "#ContactName").val();
 //var contactemail = $( "#ContactEmail").val();
 //var contactmessage = $( "#ContactComment").val();
