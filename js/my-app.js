@@ -201,8 +201,68 @@ $.ajax({
 								});
 return false;
 });
+
+		
+		$('#twitter').click (function() {
+			window.open("http://www.twitter.com/gloprive");
+		});
+		
+		$('#facebook').click (function() {
+			window.open("http://facebook.com/pages/Glo-Priv%C3%A9/908268655854350?fref=photo");
+		});
 		
 		
+		$('#google').click (function() {
+			window.open("http://plus.google.com/b/109286898800305044593/109286898800305044593/posts");
+		});
+		
+		
+		$('#instagram').click (function() {
+			window.open("http://www.instagram.com/gloprive");
+		});
+		
+		
+		
+		
+		
+		$('#subbutton').click (function() {
+			alert("work");
+//var contactname = $( "#ContactName").val();
+//var contactemail = $( "#ContactEmail").val();
+//var contactmessage = $( "#ContactComment").val();
+//alert(storeid);
+$.ajax({
+									type: "POST",
+									url: "send.php",
+									data: $("#contact").serialize(),
+									//data: {contactname:ContactName, contactemail:ContactEmail, contactmessage:ContactComment},
+																		
+									success: function(msg){
+									if (msg.success == false) {
+									$("#warn").html("There was an error submitting the form. Please try again.");
+									} else {
+										if(msg ==success) {
+											alert("Voucher Generated Successfully");
+										}
+										else {
+									
+										alert(msg);
+										}
+									//$('#main_section').html('<img src="images/loading.gif" />');
+									//$('#main_section').html(msg);
+									//alert(msg);
+									//alert("Voucher has been generated successfully");
+										
+									}
+													
+									}
+									
+								});
+return false;
+});
+
+
+
 		
 		//***end of gen voucher script
 		$('a.backbutton').click(function(){
