@@ -6,7 +6,7 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>Glo Prive</name>
 
     <description>
         Glo Prive a lifestyle app that connects you to partners around the world offering you discounts and gift
@@ -19,11 +19,9 @@
 	<feature name="http://api.phonegap.com/1.0/device" />
 
    <preference name="phonegap-version" value="3.6.3" />
-  <!--  <preference name="permissions"                value="none"/>
-
-    <!-- Customize your app and platform with the preference element. -->
-    <preference name="orientation"                value="potrait" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+  
+    <preference name="orientation" value="default" />       
+    <preference name="target-device" value="universal" />     
    
    
 
@@ -51,7 +49,7 @@
     <gap:splash src="splash/normal.jpg"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="splash/large.jpg"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="splash/xlarge.jpg"      gap:platform="android" gap:qualifier="port-xhdpi" />
-    </gap:config-file>
+   
 	
 	
 
