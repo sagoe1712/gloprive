@@ -15,9 +15,11 @@
     <author href="http://gloprive.com" email="info@gloprive.com">
         Glo Prive
     </author>
+	
+	<feature name="http://api.phonegap.com/1.0/device" />
 
-   
-    <preference name="permissions"                value="none"/>
+   <preference name="phonegap-version" value="3.6.3" />
+  <!--  <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="potrait" />        <!-- all: default means both landscape and portrait are enabled -->
