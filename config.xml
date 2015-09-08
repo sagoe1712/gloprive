@@ -45,6 +45,10 @@
     
 
     <!-- Define app splash screen for each platform. -->
+	
+	<preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+	
     <gap:splash src="small.jpg"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="normal.jpg"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="large.jpg"       gap:platform="android" gap:qualifier="port-hdpi" />
