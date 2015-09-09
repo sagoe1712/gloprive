@@ -50,10 +50,28 @@ $(document).on('pageInit', function (e) {
 	
 	$('#sendmsg').click (function() {
 		//	alert("work");
-//var contactname = $( "#ContactName").val();
-//var contactemail = $( "#ContactEmail").val();
-//var contactmessage = $( "#ContactComment").val();
+var name = $( "#name").val();
+var email = $( "#email").val();
+var message = $( "#message").val();
 //alert(storeid);
+if (name ==""){
+	alert("Kindly enter your name");
+	$('#name').focus();
+	return false;
+}
+
+else if 	(email == ""){
+	alert("Kindly enter your email");
+	$('#email').focus();
+	return false;
+	
+}
+
+else if (message ==""){
+	$('#warn').text("Kindly enter your message");
+	$('#message').focus();
+	return false;
+}
 $.ajax({
 									type: "POST",
 									url: "http://gloprive.com/mobi/send.php",
