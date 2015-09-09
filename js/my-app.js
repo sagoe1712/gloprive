@@ -226,7 +226,7 @@ return false;
 		
 		
 		
-		$('#subbutton').click (function() {
+		$('#submit').click (function() {
 			//alert("work");
 //var contactname = $( "#ContactName").val();
 //var contactemail = $( "#ContactEmail").val();
@@ -234,25 +234,15 @@ return false;
 //alert(storeid);
 $.ajax({
 									type: "POST",
-									url: "send.php",
-									data: $("#contact").serialize(),
-									//data: {contactname:ContactName, contactemail:ContactEmail, contactmessage:ContactComment},
+									url: "http://gloprive.com/mobi/send.php",
+									//data: $("#contact").serialize(),
+									data: {name:name, email:email, message:message},
 																		
 									success: function(msg){
 									if (msg.success == false) {
 									$("#warn").html("There was an error submitting the form. Please try again.");
 									} else {
-										if(msg ==success) {
-											alert("Voucher Generated Successfully");
-										}
-										else {
-									
 										alert(msg);
-										}
-									//$('#main_section').html('<img src="images/loading.gif" />');
-									//$('#main_section').html(msg);
-									//alert(msg);
-									//alert("Voucher has been generated successfully");
 										
 									}
 													
