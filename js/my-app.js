@@ -48,7 +48,31 @@ $(document).on('pageInit', function (e) {
 	//$('#home12').load('offerslides.php');
 //	$('#merchantpage').load('merchantoffers.php');
 	
-	
+	$('#sendmsg').click (function() {
+		//	alert("work");
+//var contactname = $( "#ContactName").val();
+//var contactemail = $( "#ContactEmail").val();
+//var contactmessage = $( "#ContactComment").val();
+//alert(storeid);
+$.ajax({
+									type: "POST",
+									url: "http://gloprive.com/mobi/send.php",
+									//data: $("#contact").serialize(),
+									data: {name:name, email:email, message:message},
+																		
+									success: function(msg){
+									if (msg.success == false) {
+									$("#warn").html("There was an error submitting the form. Please try again.");
+									} else {
+										alert(msg); 
+										
+									}
+													
+									}
+									
+								});
+return false;
+});
 
 
 
@@ -226,31 +250,7 @@ return false;
 		
 		
 		
-		$('#submit').click (function() {
-			//alert("work");
-//var contactname = $( "#ContactName").val();
-//var contactemail = $( "#ContactEmail").val();
-//var contactmessage = $( "#ContactComment").val();
-//alert(storeid);
-$.ajax({
-									type: "POST",
-									url: "http://gloprive.com/mobi/send.php",
-									//data: $("#contact").serialize(),
-									data: {name:name, email:email, message:message},
-																		
-									success: function(msg){
-									if (msg.success == false) {
-									$("#warn").html("There was an error submitting the form. Please try again.");
-									} else {
-										alert(msg);
-										
-									}
-													
-									}
-									
-								});
-return false;
-});
+		
 
 
 
