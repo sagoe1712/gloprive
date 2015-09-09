@@ -82,7 +82,10 @@ $.ajax({
 									if (msg.success == false) {
 									$("#warn").html("There was an error submitting the form. Please try again.");
 									} else {
-										alert(msg); 
+									alert(msg); 
+									$('#name').val("");
+									$('#email').val("");
+									$('#message').val("");
 										
 									}
 													
