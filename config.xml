@@ -46,7 +46,7 @@
 
     <!-- Define app splash screen for each platform. -->
 	
-	 <gap:splash src="large.jpg"  gap:platform="android" gap:density="ldpi" />
+	 <!--<gap:splash src="large.jpg"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="large.jpg"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="large.jpg"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="large.jpg" gap:platform="android" gap:density="xhdpi" />
@@ -60,7 +60,7 @@
     <gap:splash src="normal.jpg"     gap:platform="ios"     width="1242" height="2208" />
     <gap:splash src="xlarge.jpg"     gap:platform="ios"     width="2208" height="1242" />
 
-    <gap:splash src="large.jpg" gap:platform="winphone" />
+    <gap:splash src="large.jpg" gap:platform="winphone" /> -->
 	
 	
 
